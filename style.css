@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-gallery {
+    display: grid;
+    grid-auto-columns: 200px;
+    grid-auto-rows: 300px;
+    gap: 1em;
+    grid-template-areas:
+        "image-1 image-2 image-3 image-3"
+        "image-4 image-2 image-5 image-6"
+        "image-7 image-8 image-9 image-9";
+}
+
+.image {
+    background-color: blue;
+    overflow: hidden;
+}
+
+img {
+    height: 300px;
+    width: auto;
+}
+
+.image-gallery>.image:nth-child(2) img {
+    height: 700px;
+    width: auto;
+}
+
+.image-gallery>.image:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
