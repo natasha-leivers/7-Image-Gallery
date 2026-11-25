@@ -35,3 +35,33 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+@media (max-width:768px) {
+    .image-gallery {
+        grid-template-areas:
+            "image-1 image-2"
+            "image-4 image-2"
+            "image-3 image-3"
+            "image-5 image-6"
+            "image-7 image-8"
+            "image-9 image-9";
+    }
+}
+
+@media (max-width:375px) {
+
+    .image-gallery {
+        grid-template-areas:
+            "image-1"
+            "image-2"
+            "image-2"
+            "image-4"
+            "image-3"
+            "image-5"
+            "image-6"
+            "image-7"
+            "image-8"
+            "image-9";
+        ;
+    }
+}
